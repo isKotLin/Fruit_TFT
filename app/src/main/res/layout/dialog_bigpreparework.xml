@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="733dp"
+        android:layout_height="413dp"
+        android:background="@drawable/img_pop_2">
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/btn_pop_close_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:text="STEP 2"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_32"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_tap_anim"
+            android:layout_width="234dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/img_pop_icon" />
+
+        <ImageView
+            android:id="@+id/judge_iv"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="25dp"
+            android:src="@drawable/btn_start_2" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="290dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="95dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="none"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@drawable/scrollbar" />
+    </FrameLayout>
+</LinearLayout>

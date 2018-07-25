@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/nocontent_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bk_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/img_band_11"
+            android:orientation="vertical"
+            android:paddingLeft="100dp">
+
+            <TextView
+                android:id="@+id/changefont1_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/no_recent_text1"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size_26" />
+
+            <View
+                android:layout_width="456dp"
+                android:layout_height="1.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/changefont2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/no_recent_text2"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size_26" />
+
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_home_selector"
+                android:clickable="true"
+                android:onClick="backHomeClick" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.tmall.ultraviewpager.UltraViewPager
+            android:id="@+id/ultra_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:background="#CC000000"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_home_1"
+                android:clickable="true"
+                android:onClick="backHomeClick" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/text_color_white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/left_recipe_tv"
+                    android:layout_width="41dp"
+                    android:layout_height="101dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/btn_arrow_left_2"
+                    android:clickable="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/count_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="5/10"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_22" />
+
+                    <TextView
+                        android:id="@+id/recipe_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="PESTO"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_26" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/right_recipe_tv"
+                    android:layout_width="41dp"
+                    android:layout_height="101dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/btn_arrow_right_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/indicator_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:orientation="horizontal" />
+
+                    <View
+                        android:id="@+id/indicator_view"
+                        android:layout_width="1dp"
+                        android:layout_height="10dp"
+                        android:background="@color/yellow" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/selectrecipe_bt"
+            android:layout_width="192dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="35dp"
+            android:text="@string/select"
+            android:textColor="#FFE026"
+            android:textSize="@dimen/text_size_22" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pic_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bk_04"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_band_2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/changefont1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR RECIPE IS READY"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_32" />
+
+        <TextView
+            android:id="@+id/changefont2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enjoy your meal !"
+            android:textColor="@color/text_color_yellow"
+            android:textSize="@dimen/text_size_32" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginRight="15px"
+            android:onClick="backFinishClick"
+            android:src="@drawable/back_home_selector" />
+
+    </LinearLayout>
+</FrameLayout>

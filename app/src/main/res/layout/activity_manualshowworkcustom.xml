@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bk_04"
+        android:scaleType="fitXY" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_band_7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="306"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_back_1"
+                    android:onClick="backFinishClick" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="138dp"
+                        android:layout_height="138dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_black_circle" />
+
+                    <com.vigorchip.juice.view.ProgressView
+                        android:id="@+id/progress_view"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android_custom:roundColor="#ffffff"
+                        android_custom:roundProgressColor="#FFDA00"
+                        android_custom:roundWidth="20dp"
+                        android_custom:textIsDisplayable="false" />
+
+                    <ImageView
+                        android:id="@+id/play_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/work_play_selector"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/pause_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/work_pause_selector" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/longclick_iv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="30dp"
+                    android:padding="9dp"
+                    android:src="@drawable/btn_move_2"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="175"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_time_1" />
+
+                <TextView
+                    android:id="@+id/min_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:text="00  min"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_28" />
+
+                <TextView
+                    android:id="@+id/sec_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:text="00  sec"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_28" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/speed_tag_iv"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/btn_fan_3_1" />
+
+                <TextView
+                    android:id="@+id/speed_tv"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="30dp"
+                    android:text="00  speed"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_28" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

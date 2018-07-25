@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FruitJuice</string>
+    <string name="select">SELECT</string>
+    <string name="show1">Are you expert of this recipe ?</string>
+    <string name="show2">follow the \n steps</string>
+    <string name="show3">add ingredients \n and go</string>
+    <string name="no_favourite_text">You have not added any \n recipe in \"My recipes\"</string>
+    <string name="no_recent_text1">You have not added any recently \n cooked recipe</string>
+    <string name="no_recent_text2">LET\'S COOK NOW</string>
+
+
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown reason.</string>
+    <string name="small_jar_notice">SINGLE SERVICE CUP PLUGGED IN</string>
+    <string name="big_jar_notice">JAR PLUGGED IN</string>
+
+    <string name="block_canary_display_activity_label">Blocks</string>
+</resources>

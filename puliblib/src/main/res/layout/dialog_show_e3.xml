@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="733dp"
+        android:layout_height="413dp"
+        android:background="@drawable/img_pop_2">
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/btn_pop_close_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text1_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="THE UNIT IS OVERLOADED"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@+id/text2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Please reduce the load"
+                android:textColor="@color/text_color_yellow"
+                android:textSize="@dimen/text_size_22" />
+
+            <ImageView
+                android:id="@+id/overload_iv"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

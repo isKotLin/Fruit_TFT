@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bk_09"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_close_1"
+                android:clickable="true"
+                android:onClick="backHomeClick" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_line_03" />
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_time_2"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/needtime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11'22''"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="47dp"
+                android:layout_height="31dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/img_user"
+                android:clickable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/up_person_iv"
+                    android:layout_width="41dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:onClick="addPersonClick"
+                    android:padding="5dp"
+                    android:src="@drawable/btn_up_1" />
+
+                <TextView
+                    android:id="@+id/person_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_24" />
+
+                <ImageView
+                    android:id="@+id/down_person_iv"
+                    android:layout_width="41dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:onClick="reducePersonClick"
+                    android:padding="5dp"
+                    android:src="@drawable/btn_down_1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_line_01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:fadeScrollbars="false"
+                    android:overScrollMode="never"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbarThumbVertical="@drawable/scrollbar">
+
+                    <LinearLayout
+                        android:id="@+id/ll_contain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+                </ScrollView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bg_shadom"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_start_2"
+                android:onClick="continueClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

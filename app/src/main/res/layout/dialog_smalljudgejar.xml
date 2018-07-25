@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="415dp"
+        android:layout_height="415dp"
+        android:background="@drawable/img_pop_1">
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/btn_pop_close_1" />
+
+        <ImageView
+            android:id="@+id/judge_iv"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="25px"
+            android:src="@drawable/btn_start_2" />
+
+        <ImageView
+            android:layout_width="234dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:src="@drawable/img_pop_icon_1"
+            android:id="@+id/imageView" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_09">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="322dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/img_band_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="254dp"
+                android:layout_gravity="bottom|left"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/wifi_iv"
+                    android:layout_width="73dp"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/btn_setting_wifi_1" />
+
+
+                <ImageView
+                    android:id="@+id/language_iv"
+                    android:layout_width="73dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/btn_setting_language_1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/content_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/back_home_selector"
+        android:clickable="true"
+        android:onClick="backHomeClick" />
+</FrameLayout>

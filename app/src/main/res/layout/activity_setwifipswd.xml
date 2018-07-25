@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_09">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:onClick="backFinishClick"
+                android:src="@drawable/icon_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="INSERT PASSWORD"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size_28" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/wifiname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="wifiName"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_28" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/white"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="22"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</FrameLayout>

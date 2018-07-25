@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vigorchip.juice.view.ViewPageContainer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipChildren="false">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_bg_vp"
+            android:layout_width="550dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clipChildren="false" />
+    </com.vigorchip.juice.view.ViewPageContainer>
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:background="#BF000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/main_mode_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/main_00_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_00_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_01_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_01_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_02_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_02_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_03_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_03_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_04_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_04_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_05_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_05_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_06_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_06_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+
+                <RadioButton
+                    android:id="@+id/main_07_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_07_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_08_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_08_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/main_09_rb"
+                    android:layout_width="72dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_rb_09_selector"
+                    android:button="@null"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#66ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btn_arrow_left_1"
+                    android:clickable="true"
+                    android:onClick="leftModeClick"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/upcontent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Main Menu"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <TextView
+                        android:id="@+id/downcontent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="down"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_30" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/right_mode_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/btn_arrow_right_1"
+                    android:clickable="true"
+                    android:onClick="rightModeClick"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/button_selector"
+        android:onClick="commitClick"
+        android:paddingLeft="35dp"
+        android:text="@string/select"
+        android:textColor="#FFE026"
+        android:textSize="@dimen/text_size_22" />
+</FrameLayout>

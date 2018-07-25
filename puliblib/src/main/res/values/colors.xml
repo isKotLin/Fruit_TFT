@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+
+    <color name="top_bar_normal_bg">#FF6B37</color>
+
+    <color name="scream_bg_color">#f7f7f7</color>
+    <color name="divide_line_color">#e1e1e1</color>
+
+
+    <!-- 底栏字体颜色 -->
+    <color name="footer_text_color_normal">#8E8E8E</color>
+    <color name="footer_text_color_selected">#F94233</color>
+
+    <!-- 字体颜色值 -->
+    <color name="text_color_blue">#0081E1</color>
+    <color name="text_color_black">#555555</color>
+    <color name="text_middle_black">#7b7b7b</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_middle_white">#eeeeee</color>
+    <color name="text_color_gray">#888888</color>
+    <color name="text_color_gray_light">#A8A8A8</color>
+    <color name="text_color_red">#FF5B46</color>
+    <color name="text_color_orange">#FF8E52</color>
+    <color name="text_color_hint">#ffaaaaaa</color>
+    <color name="text_color_input">#ff111111</color>
+    <color name="text_color_yellow">#FEDA00</color>
+    <color name="bg_color">#414141</color>
+
+
+
+
+    <!-- 黑白色值 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF8E52</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FEDA00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="yellow_lemon">#FFFACD</color>
+    <color name="gray_light">#DFDFDF</color>
+    <color name="gray_white">#F5F5F5</color>
+    <color name="gray_slate">#708090</color>
+    <color name="blue_light">#0083FF</color>
+    <color name="transparent_black">#40000000</color>
+    <color name="black_middle">#BFBFBF</color>
+    <color name="mohucolor">#65000000</color>
+
+
+    <color name="focusedtrue">#DBDBDB</color>
+    <color name="presstrue">#EAEAEA</color>
+    <color name="normalback">#FFFFFF</color>
+    <color name="hintcolor">#707070</color>
+</resources>
